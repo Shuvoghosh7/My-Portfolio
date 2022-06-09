@@ -30,7 +30,7 @@ const Navbar = ({ children }) => {
                             </div>
                             <div>
                                <ul>
-                                   <li>Here Me</li>
+                                   <li><Link  to="/contuct" className='rounded-lg btn bg-transparent rounded-3xl'>Hire Me</Link></li>
                                </ul>
 
                             </div>
@@ -47,12 +47,8 @@ const Navbar = ({ children }) => {
                 <ul class="menu p-4 overflow-y-auto w-42 bg-base-100">
 
                     <li><Link to='/' className='rounded-lg'>Home</Link></li>
-                    <li><Link to='/about' className='rounded-lg'>About</Link></li>
-                    <li><Link to='/services' className='rounded-lg'>Services</Link></li>
-                    <li><Link to="/contact" className='rounded-lg'>Contuct</Link></li>
-
-
-
+                    <li><Link to='/project' className='rounded-lg'>Project</Link></li>
+                    <li><Link to="/contuct" className='rounded-lg'>Contuct</Link></li>
                 </ul>
 
             </div>

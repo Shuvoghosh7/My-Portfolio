@@ -8,7 +8,7 @@ import project3 from '../../img/project/project3.PNG'
 import { Link } from 'react-router-dom';
 const Project = () => {
     return (
-        <div className='mt-12'>
+        <div className='mt-16'>
             <p className='text-5xl text-white text-center'>Recent Project</p>
             <div className='grid lg:grid-cols-3 gap-4 mt-6 mx-6 my-6'>
                 <div>
