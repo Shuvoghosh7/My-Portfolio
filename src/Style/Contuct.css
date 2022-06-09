@@ -1,0 +1,6 @@
+.form-control input::placeholder {
+    color:black;
+}
+.form-control textarea::placeholder {
+    color:black;
+}

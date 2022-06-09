@@ -15,14 +15,14 @@ const Intro = () => {
                 <div className='text-white i-name'>
                     <p className='text-6xl'>Hello! I’m</p>
                     <p className='text-6xl'>Shuvo Gosh</p>
-                    <h1 className='text-xl mt-3'> Frontend Developer with high level of experience in web designing and <br /> development, producting the Quality work</h1>
+                    <h1 className='text-xl mt-3'> Frontend Developer with mid level of experience in <br /> web development  and  designing</h1>
                     <a href={Resume} download>
                         <button class="btn bg-transparent mt-5 rounded-3xl text-white">Get Resume <span className='ml-2'><HiDownload /></span></button>
                     </a>
                     <div className="i-icons">
-                        <img src={Github} alt="" />
-                        <img src={LinkedIn} alt="" />
-                        <img className='fb' src={facebook} alt="" />
+                        <a href="https://github.com/Shuvoghosh7" target="blank"><img src={Github} alt="" /></a>
+                       <a href="https://www.linkedin.com/in/shuvogosh/" target="blank"> <img src={LinkedIn} alt="" /></a>
+                       <a href="https://www.facebook.com/shuvo.gosh.5" target="blank"> <img className='fb' src={facebook} alt="" /></a>
                     </div>
                 </div>
                 <div className='lg:mt-[-100px]'>

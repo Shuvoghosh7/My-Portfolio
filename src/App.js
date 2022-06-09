@@ -7,6 +7,7 @@ import Project from './Pages/Project/Project';
 import ProjectDetails1 from './Pages/ProjectDetails/ProjectDetails1';
 import ProjectDetails2 from './Pages/ProjectDetails/ProjectDetails2';
 import ProjectDetails3 from './Pages/ProjectDetails/ProjectDetails3';
+import Contuct from './Pages/Contuct/Contuct';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/project1' element={<ProjectDetails1/>}/>
           <Route path='/project2' element={<ProjectDetails2/>}/>
           <Route path='/project3' element={<ProjectDetails3/>}/>
+          <Route path='/contuct' element={<Contuct/>}/>
         </Routes>
       </Navbar>
     </div>
