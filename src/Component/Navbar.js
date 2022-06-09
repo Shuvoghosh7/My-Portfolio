@@ -19,7 +19,7 @@ const Navbar = ({ children }) => {
                     </div>
 
                     <div class="flex-auto hidden lg:block ">
-                        <div className='flex justify-around items-center'>
+                        <div className='flex justify-between items-center'>
                             <div>
                                 <ul class="menu menu-horizontal gap-x-2 ">
                                     <li><Link to='/' className='rounded-lg'>Home</Link></li>

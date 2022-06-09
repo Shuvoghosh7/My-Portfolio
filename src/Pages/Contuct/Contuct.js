@@ -21,7 +21,7 @@ const Contuct = () => {
     return (
         <div>
             <p className='text-5xl my-16 text-center font-bold 'style={{color:lightMode?"#9A1750":"white"}}>CONTUCT</p>
-            <div className=' lg:flex justify-around items-center'style={{color:lightMode?"#9A1750":"#116466"}}>
+            <div className=' lg:flex md:flex justify-around items-center'style={{color:lightMode?"#9A1750":"#116466"}}>
 
                 <div>
                     <h1 className='text-6xl'>CONTUCT ME</h1>
