@@ -6,7 +6,7 @@ import LinkedIn from '../../img/icon/linkedin.png'
 import Github from '../../img/icon/github.png'
 import { HiDownload } from 'react-icons/hi';
 import Resume from '../../Pages/Intro/Resume.pdf';
-import { saveAs } from 'file-saver';
+
 const Intro = () => {
     
     return (
