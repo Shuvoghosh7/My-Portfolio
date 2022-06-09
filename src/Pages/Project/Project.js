@@ -8,7 +8,7 @@ import project3 from '../../img/project/project3.PNG'
 import { Link } from 'react-router-dom';
 const Project = () => {
     return (
-        <div>
+        <div className='mt-12'>
             <p className='text-5xl text-white text-center'>Recent Project</p>
             <div className='grid lg:grid-cols-3 gap-4 mt-6 mx-6 my-6'>
                 <div>
@@ -18,7 +18,7 @@ const Project = () => {
                             <p className='text-white text-center text-2xl'>Computer Parts Manufacturer</p>
                             <p className='text-center text-blue-600 text-xl flex justify-around'>
                                 <a href='https://computer-parts-manufactu-ed97b.web.app/' target="blank"><button className='btn bg-transparent mt-5 rounded-3xl text-white'>Live side Link</button></a>
-                                <button className='btn bg-transparent mt-5 rounded-3xl text-white'>See Details</button>
+                                <Link to="/project1" className='btn bg-transparent mt-5 rounded-3xl text-white'>See Details</Link>
                             </p>
                         </div>
                     </div>
@@ -31,7 +31,7 @@ const Project = () => {
                                 WAREHOUSE</p>
                             <p className='text-center text-blue-600 text-xl flex justify-around'>
                                 <a href='https://smartphone-warehouse-ebc90.web.app/' target="blank"><button className='btn bg-transparent mt-5 rounded-3xl text-white'>Live side Link</button></a>
-                                <button className='btn bg-transparent mt-5 rounded-3xl text-white'>See Details</button>
+                                <Link to="/project2" className='btn bg-transparent mt-5 rounded-3xl text-white'>See Details</Link>
                             </p>
                         </div>
 
@@ -43,8 +43,8 @@ const Project = () => {
                         <div>
                             <p className='text-white text-center text-2xl'>Computer Parts Manufacturer</p>
                             <p className='text-center text-blue-600 text-xl flex justify-around'>
-                                <a href='https://computer-parts-manufactu-ed97b.web.app/' target="blank"><button className='btn bg-transparent mt-5 rounded-3xl text-white'>Live side Link</button></a>
-                                <button className='btn bg-transparent mt-5 rounded-3xl text-white'>See Details</button>
+                                <a href='https://green-bangla-tours-37d8b.web.app/' target="blank"><button className='btn bg-transparent mt-5 rounded-3xl text-white'>Live side Link</button></a>
+                                <Link to="/project3" className='btn bg-transparent mt-5 rounded-3xl text-white'>See Details</Link>
                             </p>
                         </div>
                     </div>

@@ -23,7 +23,7 @@ const Navbar = ({ children }) => {
 
                                     <li><Link to='/' className='rounded-lg'>Home</Link></li>
 
-                                    <li><Link to='/about' className='rounded-lg'>About</Link></li>
+                                    <li><Link to='/project' className='rounded-lg'>Project</Link></li>
                                     <li><Link to='/services' className='rounded-lg'>Services</Link></li>
                                     <li><Link to="/contact" className='rounded-lg'>Contuct</Link></li>
                                 </ul>
