@@ -1,10 +1,11 @@
-import React, { useRef, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import '../../Style/Contuct.css'
 import emailjs from '@emailjs/browser';
+import { themeContext } from '../../Context';
 const Contuct = () => {
-    const [done, setDone] = useState(false)
     const form = useRef();
-
+    const theme = useContext(themeContext);
+    const lightMode = theme.state.lightMode;
     const sendEmail = (e) => {
 
         e.preventDefault();
@@ -13,14 +14,14 @@ const Contuct = () => {
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
-                setDone(true);
+               
                 form.reset();
             });
     }
     return (
         <div>
-            <p className='text-5xl my-16 text-center text-white'>Contact</p>
-            <div className='text-white lg:flex justify-around items-center'>
+            <p className='text-5xl my-16 text-center font-bold 'style={{color:lightMode?"#9A1750":"white"}}>CONTUCT</p>
+            <div className=' lg:flex justify-around items-center'style={{color:lightMode?"#9A1750":"#116466"}}>
 
                 <div>
                     <h1 className='text-6xl'>CONTUCT ME</h1>
@@ -48,7 +49,7 @@ const Contuct = () => {
                     <div class="form-control mt-6">
                         <button class="btn ">SEND</button>
                     </div>
-                    <span>{done && "Thanks for Contacting me"}</span>
+                    
 
                 </form>
             </div>

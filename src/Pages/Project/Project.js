@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import '../../Style/Project.css'
@@ -6,19 +6,22 @@ import project1 from '../../img/project/New Project(1).png'
 import project2 from '../../img/project/project2.PNG'
 import project3 from '../../img/project/project3.PNG'
 import { Link } from 'react-router-dom';
+import { themeContext } from '../../Context';
 const Project = () => {
+    const theme = useContext(themeContext);
+    const lightMode = theme.state.lightMode;
     return (
         <div className='mt-16'>
-            <p className='text-5xl text-white text-center'>Recent Project</p>
+            <p className='text-5xl  text-center font-bold' style={{color:lightMode?"#9A1750":"white"}}>RECENT PROJECT</p>
             <div className='grid lg:grid-cols-3 gap-4 mt-6 mx-6 my-6'>
                 <div>
                     <div>
                         <img src={project1} alt="" />
                         <div>
-                            <p className='text-white text-center text-2xl'>Computer Parts Manufacturer</p>
-                            <p className='text-center text-blue-600 text-xl flex justify-around'>
-                                <a href='https://computer-parts-manufactu-ed97b.web.app/' target="blank"><button className='btn bg-transparent mt-5 rounded-3xl text-white'>Live side Link</button></a>
-                                <Link to="/project1" className='btn bg-transparent mt-5 rounded-3xl text-white'>See Details</Link>
+                            <p className=' text-2xl text-center' style={{color:lightMode?"black":"white"}} >Computer Parts Manufacturer</p>
+                            <p className='text-center  text-xl flex justify-around'>
+                                <a href='https://computer-parts-manufactu-ed97b.web.app/' target="blank"><button className='btn bg-transparent mt-5 rounded-3xl 'style={{color:lightMode?"blue":"white"}}>Live side Link</button></a>
+                                <Link to="/project1" className='btn bg-transparent mt-5 rounded-3xl ' style={{color:lightMode?"blue":"white"}}>See Details</Link>
                             </p>
                         </div>
                     </div>
@@ -27,11 +30,11 @@ const Project = () => {
                     <div>
                         <img src={project2} alt="" />
                         <div>
-                            <p className='text-white text-center text-2xl'>SMARTPHONE
+                            <p className='text-center text-2xl' style={{color:lightMode?"black":"white"}}>SMARTPHONE
                                 WAREHOUSE</p>
-                            <p className='text-center text-blue-600 text-xl flex justify-around'>
-                                <a href='https://smartphone-warehouse-ebc90.web.app/' target="blank"><button className='btn bg-transparent mt-5 rounded-3xl text-white'>Live side Link</button></a>
-                                <Link to="/project2" className='btn bg-transparent mt-5 rounded-3xl text-white'>See Details</Link>
+                            <p className='text-center  text-xl flex justify-around'>
+                                <a href='https://smartphone-warehouse-ebc90.web.app/' target="blank"><button className='btn bg-transparent mt-5 rounded-3xl 'style={{color:lightMode?"blue":"white"}}>Live side Link</button></a>
+                                <Link to="/project2" className='btn bg-transparent mt-5 rounded-3xl 'style={{color:lightMode?"blue":"white"}}>See Details</Link>
                             </p>
                         </div>
 
@@ -41,10 +44,10 @@ const Project = () => {
                     <div>
                         <img src={project3} alt="" />
                         <div>
-                            <p className='text-white text-center text-2xl'>Computer Parts Manufacturer</p>
-                            <p className='text-center text-blue-600 text-xl flex justify-around'>
-                                <a href='https://green-bangla-tours-37d8b.web.app/' target="blank"><button className='btn bg-transparent mt-5 rounded-3xl text-white'>Live side Link</button></a>
-                                <Link to="/project3" className='btn bg-transparent mt-5 rounded-3xl text-white'>See Details</Link>
+                            <p className='text-center text-2xl' style={{color:lightMode?"black":"white"}}>Computer Parts Manufacturer</p>
+                            <p className='text-center text-xl flex justify-around'>
+                                <a href='https://green-bangla-tours-37d8b.web.app/' target="blank"><button className='btn bg-transparent mt-5 rounded-3xl'style={{color:lightMode?"blue":"white"}}>Live side Link</button></a>
+                                <Link to="/project3" className='btn bg-transparent mt-5 rounded-3xl ' style={{color:lightMode?"blue":"white"}}>See Details</Link>
                             </p>
                         </div>
                     </div>

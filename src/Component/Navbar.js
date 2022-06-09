@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Toggle from './Toggle/Toggle';
 
 const Navbar = ({ children }) => {
+
     return (
         <div class="drawer drawer-end">
             <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
@@ -17,10 +19,9 @@ const Navbar = ({ children }) => {
                     </div>
 
                     <div class="flex-auto hidden lg:block ">
-                        <div className='flex justify-between items-center'>
+                        <div className='flex justify-around items-center'>
                             <div>
                                 <ul class="menu menu-horizontal gap-x-2 ">
-
                                     <li><Link to='/' className='rounded-lg'>Home</Link></li>
 
                                     <li><Link to='/project' className='rounded-lg'>Project</Link></li>
@@ -29,9 +30,18 @@ const Navbar = ({ children }) => {
                                 </ul>
                             </div>
                             <div>
-                               <ul>
-                                   <li><Link  to="/contuct" className='rounded-lg btn bg-transparent rounded-3xl'>Hire Me</Link></li>
-                               </ul>
+                                <ul>
+                                    <div className='flex justify-center items-center'>
+                                        <div>
+                                            <li><Link to="/contuct" className='rounded-lg btn bg-transparent rounded-3xl'>Hire Me</Link>
+                                            </li>
+                                        </div>
+                                        <div>
+                                            <Toggle />
+                                        </div>
+                                    </div>
+
+                                </ul>
 
                             </div>
                         </div>

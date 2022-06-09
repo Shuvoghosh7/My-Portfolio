@@ -8,10 +8,18 @@ import ProjectDetails1 from './Pages/ProjectDetails/ProjectDetails1';
 import ProjectDetails2 from './Pages/ProjectDetails/ProjectDetails2';
 import ProjectDetails3 from './Pages/ProjectDetails/ProjectDetails3';
 import Contuct from './Pages/Contuct/Contuct';
+import { useContext } from 'react';
+import { themeContext } from './Context';
 
 function App() {
+  const theme = useContext(themeContext);
+  const lightMode = theme.state.lightMode;
   return (
-    <div>
+    <div 
+    style={{
+      background: lightMode ? "white" : "",
+     
+    }}>
       <Navbar>
         <Routes>
           <Route path='/' element={<Home/>}/>

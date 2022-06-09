@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { themeContext } from '../../Context';
 import project2 from '../../img/project/project2.PNG'
 const ProjectDetails2 = () => {
+    const theme = useContext(themeContext);
+    const lightMode = theme.state.lightMode;
     return (
         <div className='mt-16'>
             <div className='flex justify-center'>
                 <img className='w-[600px]' src={project2} alt="" />
             </div>
-            <div className='mx-6 mt-6 text-white'>
-                <p><span className='p-title'>Project Name:</span> Warehouse-management</p>
+            <div className='mx-6 mt-6 'style={{color:lightMode?"black":"white"}}>
+                <p><span className='p-title'style={{color:lightMode?"#9A1750":"white"}}>Project Name:</span> Warehouse-management</p>
                 <p className='p-title'> <a href="https://github.com/Shuvoghosh7/Warehouse-management" target="blank">Github Client Link</a></p>
                <p className='p-title'><a href="https://github.com/Shuvoghosh7/warehouse-management-server-side-" target="blank">Github Server Link</a></p>
                 <h1>Project Details:</h1>
