@@ -28,6 +28,7 @@ const Navbar = ({ children }) => {
 
                                     <li><Link to='/project' className='rounded-lg'>Project</Link></li>
                                     <li><Link to="/skills" className='rounded-lg'>Skills</Link></li>
+                                    <li><Link to="/blog" className='rounded-lg'>Blog</Link></li>
 
                                 </ul>
                             </div>

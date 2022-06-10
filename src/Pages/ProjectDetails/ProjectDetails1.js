@@ -1,19 +1,25 @@
 import React, { useContext } from 'react';
 import { themeContext } from '../../Context';
-import project1 from '../../img/project/New Project(1).png'
+
+import order from '../../img/project/project1/order2.png'
+import product from '../../img/project/project1/product.png'
+import review from '../../img/project/project1/review.png'
 import '../../Style/ProjectDetails.css'
 const ProjectDetails1 = () => {
     const theme = useContext(themeContext);
     const lightMode = theme.state.lightMode;
     return (
         <div className='mt-16'>
-            <div className='flex justify-center'>
-                <img className='w-[600px]' src={project1} alt="" />
+            <div className='grid lg:grid-cols-3 gap-10 m-12'>
+                <img src={product} alt="" />
+                <img src={order} alt="" />
+                <img src={review} alt="" />
             </div>
             <div className='mx-6 mt-6 'style={{color:lightMode?"black":"white"}}>
                 <p><span className='p-title 'style={{color:lightMode?"#9A1750":"white"}}>Project Name:</span > Computer Parts Manufacturer</p>
-               <p className='p-title' style={{color:lightMode?"blue":"white"}}> <a href="https://github.com/Shuvoghosh7/-manufacturer-website-client-side" target="blank">Github Client Link</a></p>
-               <p className='p-title' style={{color:lightMode?"blue":"white"}}><a href="https://github.com/Shuvoghosh7/-manufacturer-website-server-side" target="blank">Github Server Link</a></p>
+               <p className='p-title' style={{color:lightMode?"blue":"#66FCF1"}}> <a href="https://computer-parts-manufactu-ed97b.web.app/" target="blank">Live Side Link</a></p>
+               <p className='p-title' style={{color:lightMode?"blue":"#66FCF1"}}> <a href="https://github.com/Shuvoghosh7/-manufacturer-website-client-side" target="blank">Github Client Link</a></p>
+               <p className='p-title' style={{color:lightMode?"blue":"#66FCF1"}}><a href="https://github.com/Shuvoghosh7/-manufacturer-website-server-side" target="blank">Github Server Link</a></p>
                 <h1>Project Details:</h1>
                 <div>
                     <ul>

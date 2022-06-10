@@ -13,6 +13,7 @@ import { themeContext } from './Context';
 import About from './Pages/About/About';
 import Education from './Pages/Education/Education';
 import Skills from './Pages/Skills/Skills';
+import Blog from './Pages/Blog/Blog';
 
 function App() {
   const theme = useContext(themeContext);
@@ -34,6 +35,7 @@ function App() {
           <Route path='/about' element={<About/>}/>
           <Route path='/education' element={<Education/>}/>
           <Route path='/skills' element={<Skills/>}/>
+          <Route path='/blog' element={<Blog/>}/>
         </Routes>
       </Navbar>
     </div>
