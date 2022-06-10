@@ -18,7 +18,7 @@ const Project = () => {
                     <div className='card shadow-2xl pb-5'style={{background:lightMode?"#D4D9E3":"#8391AD"}}>
                         <img src={project1} alt="" />
                         <div>
-                            <p className=' text-2xl text-center' style={{color:lightMode?"black":"white"}} >Computer Parts Manufacturer</p>
+                            <p className=' text-xl font-bold ' style={{color:lightMode?"black":"white"}} >Computer Parts Manufacturer</p>
                             <p className='text-center  text-xl flex justify-around'>
                                 <a href='https://computer-parts-manufactu-ed97b.web.app/' target="blank"><button className='btn bg-transparent mt-5 rounded-3xl 'style={{color:lightMode?"blue":"white"}}>Live side Link</button></a>
                                 <Link to="/project1" className='btn bg-transparent mt-5 rounded-3xl ' style={{color:lightMode?"blue":"white"}}>See Details</Link>
@@ -44,7 +44,7 @@ const Project = () => {
                     <div className='card shadow-2xl pb-5'style={{background:lightMode?"#D4D9E3":"#8391AD"}}>
                         <img src={project3} alt="" />
                         <div>
-                            <p className='text-center text-2xl' style={{color:lightMode?"black":"white"}}>Computer Parts Manufacturer</p>
+                            <p className='text-center text-2xl' style={{color:lightMode?"black":"white"}}>GREEN BANGLA TOURS</p>
                             <p className='text-center text-xl flex justify-around'>
                                 <a href='https://green-bangla-tours-37d8b.web.app/' target="blank"><button className='btn bg-transparent mt-5 rounded-3xl'style={{color:lightMode?"blue":"white"}}>Live side Link</button></a>
                                 <Link to="/project3" className='btn bg-transparent mt-5 rounded-3xl ' style={{color:lightMode?"blue":"white"}}>See Details</Link>

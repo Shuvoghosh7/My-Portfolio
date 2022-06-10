@@ -24,10 +24,11 @@ const Navbar = ({ children }) => {
                                 <ul class="menu menu-horizontal gap-x-2 ">
                                     <li><Link to='/' className='rounded-lg'>Home</Link></li>
                                     <li><Link to='/about' className='rounded-lg'>About</Link></li>
+                                    <li><Link to='/education' className='rounded-lg'>Education</Link></li>
 
                                     <li><Link to='/project' className='rounded-lg'>Project</Link></li>
-                                    <li><Link to='/services' className='rounded-lg'>Services</Link></li>
-        
+                                    <li><Link to="/skills" className='rounded-lg'>Skills</Link></li>
+
                                 </ul>
                             </div>
                             <div>
@@ -58,8 +59,14 @@ const Navbar = ({ children }) => {
                 <ul class="menu p-4 overflow-y-auto w-42 bg-base-100">
 
                     <li><Link to='/' className='rounded-lg'>Home</Link></li>
+                    <li><Link to='/about' className='rounded-lg'>About</Link></li>
+                    <li><Link to='/education' className='rounded-lg'>Education</Link></li>
                     <li><Link to='/project' className='rounded-lg'>Project</Link></li>
                     <li><Link to="/contuct" className='rounded-lg'>Contuct</Link></li>
+                    <li><Link to="/skills" className='rounded-lg'>Skills</Link></li>
+                    <div className='flex justify-center items-center'>
+                        <Toggle />
+                    </div>
                 </ul>
 
             </div>

@@ -6,7 +6,7 @@ const Education = () => {
     const theme = useContext(themeContext);
     const lightMode = theme.state.lightMode;
     return (
-        <div class="education mx-16" id="education">
+        <div class="education mx-20" id="education">
 
             <h1 class="my-12 text-center text-5xl" style={{color:lightMode?" black":" white"}}> My <span>Education</span> </h1>
 

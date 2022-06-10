@@ -13,7 +13,7 @@ const Intro = () => {
     const lightMode = theme.state.lightMode;
     return (
         <div className='mt-28'>
-            <div className='lg:flex md:flex justify-around items-center'>
+            <div className='lg:flex md:flex justify-center items-center'>
                 <div className=' i-name' style={{color:lightMode?"black":"white"}}>
                     <p className='text-6xl'>Hello! I’m</p>
                     <p className='text-6xl'>Shuvo Gosh</p>
