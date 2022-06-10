@@ -57,7 +57,7 @@ const Navbar = ({ children }) => {
             </div>
             <div class="drawer-side">
                 <label for="my-drawer-3" class="drawer-overlay"></label>
-                <ul class="menu p-4 overflow-y-auto w-42 bg-base-100">
+                <ul class="menu p-4 overflow-y-auto w-56 bg-black text-white text-xl">
 
                     <li><Link to='/' className='rounded-lg'>Home</Link></li>
                     <li><Link to='/about' className='rounded-lg'>About</Link></li>
@@ -65,6 +65,7 @@ const Navbar = ({ children }) => {
                     <li><Link to='/project' className='rounded-lg'>Project</Link></li>
                     <li><Link to="/contuct" className='rounded-lg'>Contuct</Link></li>
                     <li><Link to="/skills" className='rounded-lg'>Skills</Link></li>
+                    <li><Link to="/blog" className='rounded-lg'>Blog</Link></li>
                     <div className='flex justify-center items-center'>
                         <Toggle />
                     </div>

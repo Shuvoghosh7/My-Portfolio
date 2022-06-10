@@ -9,7 +9,7 @@ const ProjectDetails1 = () => {
     const theme = useContext(themeContext);
     const lightMode = theme.state.lightMode;
     return (
-        <div className='mt-16'>
+        <div className=' m-12'>
             <div className='grid lg:grid-cols-3 gap-10 m-12'>
                 <img src={product} alt="" />
                 <img src={order} alt="" />

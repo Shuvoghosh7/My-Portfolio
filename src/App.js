@@ -37,6 +37,7 @@ function App() {
           <Route path='/skills' element={<Skills/>}/>
           <Route path='/blog' element={<Blog/>}/>
         </Routes>
+        
       </Navbar>
     </div>
   );
