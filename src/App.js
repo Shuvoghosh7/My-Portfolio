@@ -10,6 +10,7 @@ import ProjectDetails3 from './Pages/ProjectDetails/ProjectDetails3';
 import Contuct from './Pages/Contuct/Contuct';
 import { useContext } from 'react';
 import { themeContext } from './Context';
+import About from './Pages/About/About';
 
 function App() {
   const theme = useContext(themeContext);
@@ -28,6 +29,7 @@ function App() {
           <Route path='/project2' element={<ProjectDetails2/>}/>
           <Route path='/project3' element={<ProjectDetails3/>}/>
           <Route path='/contuct' element={<Contuct/>}/>
+          <Route path='/about' element={<About/>}/>
         </Routes>
       </Navbar>
     </div>

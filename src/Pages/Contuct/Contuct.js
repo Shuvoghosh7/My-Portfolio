@@ -19,14 +19,11 @@ const Contuct = () => {
             });
     }
     return (
-        <div>
-            <p className='text-5xl my-16 text-center font-bold 'style={{color:lightMode?"#9A1750":"white"}}>CONTUCT</p>
+        <div className='my-20'>
             <div className=' lg:flex md:flex justify-around items-center'style={{color:lightMode?"#9A1750":"#116466"}}>
 
                 <div>
                     <h1 className='text-6xl'>CONTUCT ME</h1>
-                   
-
                 </div>
                 <div className='card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 my-5'>
                     <div class="card-body">

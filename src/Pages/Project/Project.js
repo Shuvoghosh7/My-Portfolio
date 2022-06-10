@@ -11,11 +11,11 @@ const Project = () => {
     const theme = useContext(themeContext);
     const lightMode = theme.state.lightMode;
     return (
-        <div className='mt-16'>
+        <div className='mt-16 lg:mx-24'>
             <p className='text-5xl  text-center font-bold' style={{color:lightMode?"#9A1750":"white"}}>RECENT PROJECT</p>
             <div className='grid lg:grid-cols-3 gap-4 mt-6 mx-6 my-6'>
                 <div>
-                    <div>
+                    <div className='card shadow-2xl pb-5'style={{background:lightMode?"#D4D9E3":"#8391AD"}}>
                         <img src={project1} alt="" />
                         <div>
                             <p className=' text-2xl text-center' style={{color:lightMode?"black":"white"}} >Computer Parts Manufacturer</p>
@@ -27,7 +27,7 @@ const Project = () => {
                     </div>
                 </div>
                 <div>
-                    <div>
+                    <div className='card shadow-2xl pb-5'style={{background:lightMode?"#D4D9E3":"#8391AD"}}>
                         <img src={project2} alt="" />
                         <div>
                             <p className='text-center text-2xl' style={{color:lightMode?"black":"white"}}>SMARTPHONE
@@ -41,7 +41,7 @@ const Project = () => {
                     </div>
                 </div>
                 <div>
-                    <div>
+                    <div className='card shadow-2xl pb-5'style={{background:lightMode?"#D4D9E3":"#8391AD"}}>
                         <img src={project3} alt="" />
                         <div>
                             <p className='text-center text-2xl' style={{color:lightMode?"black":"white"}}>Computer Parts Manufacturer</p>
