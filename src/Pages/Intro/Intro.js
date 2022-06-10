@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import '../../Style/Intro.css'
-import myProfile from '../../img/shuvo1.png'
+import myProfile from '../../img/sg2.png'
 import facebook from '../../img/icon/Facebook.png'
 import LinkedIn from '../../img/icon/linkedin.png'
 import Github from '../../img/icon/github.png'
@@ -28,7 +28,7 @@ const Intro = () => {
                     </div>
                 </div>
                 <div className='lg:mt-[-100px]'>
-                    <img src={myProfile} alt="" />
+                    <img  src={myProfile} alt="" />
                 </div>
             </div>
         </div>

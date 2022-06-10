@@ -27,7 +27,7 @@ const Navbar = ({ children }) => {
 
                                     <li><Link to='/project' className='rounded-lg'>Project</Link></li>
                                     <li><Link to='/services' className='rounded-lg'>Services</Link></li>
-                                    <li><Link to="/contuct" className='rounded-lg'>Contuct</Link></li>
+        
                                 </ul>
                             </div>
                             <div>

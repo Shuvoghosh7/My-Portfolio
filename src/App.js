@@ -11,6 +11,7 @@ import Contuct from './Pages/Contuct/Contuct';
 import { useContext } from 'react';
 import { themeContext } from './Context';
 import About from './Pages/About/About';
+import Education from './Pages/Education/Education';
 
 function App() {
   const theme = useContext(themeContext);
@@ -30,6 +31,7 @@ function App() {
           <Route path='/project3' element={<ProjectDetails3/>}/>
           <Route path='/contuct' element={<Contuct/>}/>
           <Route path='/about' element={<About/>}/>
+          <Route path='/education' element={<Education/>}/>
         </Routes>
       </Navbar>
     </div>
