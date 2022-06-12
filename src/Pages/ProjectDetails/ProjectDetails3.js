@@ -20,7 +20,7 @@ const ProjectDetails3 = () => {
                 <p className='p-title'style={{color:lightMode?"blue":"#66FCF1"}}> <a href="https://github.com/Shuvoghosh7/green-bangla-tours" target="blank">Github  Link</a></p>
                 <h1 style={{color:lightMode?"black":"white"}}>Project Details:</h1>
                 <div >
-                    <ol style={{color:lightMode?"black":"white"}}>
+                    <ol style={{color:lightMode?"black":"white"}} className="list-item">
                         <li>1. This project is a personal Tours Guide.</li>
                         <li>2. This project has a simple navbar, banner, services, Client Review section, and a footer.</li>
                         <li>3. This system has an Email and password login system. And also have Google Login System.</li>

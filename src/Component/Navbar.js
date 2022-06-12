@@ -66,7 +66,7 @@ const Navbar = ({ children }) => {
                     <li><Link to="/contuct" className='rounded-lg'>Contuct</Link></li>
                     <li><Link to="/skills" className='rounded-lg'>Skills</Link></li>
                     <li><Link to="/blog" className='rounded-lg'>Blog</Link></li>
-                    <div className='flex justify-center items-center'>
+                    <div className='ml-4'>
                         <Toggle />
                     </div>
                 </ul>
