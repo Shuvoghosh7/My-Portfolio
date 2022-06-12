@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import '../../Style/Contuct.css'
 import emailjs from '@emailjs/browser';
 import { themeContext } from '../../Context';
@@ -7,6 +7,7 @@ import { FiPhoneCall } from 'react-icons/fi';
 import { AiOutlineMail } from 'react-icons/ai';
 
 const Contuct = () => {
+    const [done, setDone] = useState(false)
     const form = useRef();
     const theme = useContext(themeContext);
     const lightMode = theme.state.lightMode;
@@ -16,10 +17,11 @@ const Contuct = () => {
         emailjs.sendForm('service_vs3wawh', 'template_22q0k04', form.current, 'h8c9-PO5q7X9zDh7g')
             .then((result) => {
                 console.log(result.text);
+                setDone(true);
+                e.target.reset();
             }, (error) => {
                 console.log(error.text);
-                form.reset();
-               
+
             });
     }
     return (
@@ -64,8 +66,9 @@ const Contuct = () => {
                             </div>
                             <div class="form-control mt-6">
                                 <button class="btn ">SEND</button>
+                                <span className='text-center font-bold' style={{ color: lightMode ? "#9A1750" : "#9A1750" }}>{done && "Thanks for Contacting me"}</span>
                             </div>
-
+                            
 
                         </form>
                     </div>

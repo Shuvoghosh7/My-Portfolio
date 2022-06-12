@@ -13,4 +13,29 @@
   }
   .i-icons > *:hover {
     cursor: pointer;
+    color: aqua;
+  }
+  .icons{
+    font-size: 70px;
+    color: orange;
+  }
+  .fb:hover{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+  }
+  .git:hover{
+    padding: 10px;
+    border-radius: 10px;
+    background-color:black;
+    color: white;
+    
+  }
+  .li:hover{
+    padding: 10px;
+    border-radius: 10px;
+    background-color:deepskyblue;
+    color: white;
+    
   }

@@ -6,7 +6,7 @@ const About = () => {
     const theme = useContext(themeContext);
     const lightMode = theme.state.lightMode;
     return (
-        <div className='lg:flex  flex-row justify-center items-center my-6 '>
+        <div className='lg:flex  flex-row justify-center items-center my-6'>
             <div className='basis-1/4 ml-12'>
                 <img src={about} alt="" />
             </div>
