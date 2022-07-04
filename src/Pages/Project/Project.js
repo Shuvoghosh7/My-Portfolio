@@ -1,19 +1,23 @@
 import React, { useContext } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-
 import '../../Style/Project.css'
 import project1 from '../../img/project/New Project(1).png'
 import project2 from '../../img/project/project2.PNG'
 import project3 from '../../img/project/project3.PNG'
 import { Link } from 'react-router-dom';
 import { themeContext } from '../../Context';
+import Fade from 'react-reveal/Fade';
+
+
 const Project = () => {
     const theme = useContext(themeContext);
     const lightMode = theme.state.lightMode;
     return (
         <div className='mt-16 lg:mx-24'>
-            <p className='text-5xl  text-center font-bold' style={{color:lightMode?"#9A1750":"white"}}>RECENT PROJECT</p>
+            <Fade top>
+            <p className='text-5xl  text-center font-bold' style={{ color: lightMode ? "#9A1750" : "white" }}>RECENT PROJECT</p>
+            </Fade>
             <div className='grid lg:grid-cols-3 gap-4 mt-6 mx-6 my-6'>
+            <Fade left>
                 <div>
                     <div className='card shadow-2xl pb-5'style={{background:lightMode?"#D4D9E3":"#8391AD"}}>
                         <img src={project1} alt="" />
@@ -26,6 +30,8 @@ const Project = () => {
                         </div>
                     </div>
                 </div>
+            </Fade>
+            <Fade bottom>
                 <div>
                     <div className='card shadow-2xl pb-5'style={{background:lightMode?"#D4D9E3":"#8391AD"}}>
                         <img src={project2} alt="" />
@@ -40,7 +46,9 @@ const Project = () => {
 
                     </div>
                 </div>
-                <div>
+            </Fade>
+            <Fade right>
+                 <div>
                     <div className='card shadow-2xl pb-5'style={{background:lightMode?"#D4D9E3":"#8391AD"}}>
                         <img src={project3} alt="" />
                         <div>
@@ -52,8 +60,10 @@ const Project = () => {
                         </div>
                     </div>
                 </div>
+            </Fade>
+        
             </div>
-
+        
         </div>
     );
 };

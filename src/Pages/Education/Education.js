@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { themeContext } from '../../Context';
 import '../../Style/Education.css'
-
+import Fade from 'react-reveal/Fade';
 const Education = () => {
     const theme = useContext(themeContext);
     const lightMode = theme.state.lightMode;
@@ -12,14 +12,16 @@ const Education = () => {
 
             <div class="box-container grid lg:grid-cols-3 gap-10 ">
                 <div class="box" style={{borderLeft:lightMode?".2rem solid black":".2rem solid white"}} >
+             
                     <i class="fas fa-graduation-cap"></i>
                     <h5 className='year'>2021</h5>
                     <h3 style={{color:lightMode?" #9A1750":" #66FCF1"}}>Computer Science & Engineering</h3>
                     <p style={{color:lightMode?" black":" white"}}> IUBAT - International University of Business Agriculture and Technology</p>
                     <p style={{color:lightMode?" black":" white"}}><span>Duration:</span> 2016 - 2021</p>
                     <p style={{color:lightMode?" black":" white"}}><span>Result:</span> 3.24 out of 4.00</p>
+                     
                 </div>
-
+          
                 <div class="box" style={{borderLeft:lightMode?".2rem solid black":".2rem solid white"}} >
                     <i class="fas fa-graduation-cap"></i>
                     <h5 className='year'>2014</h5>
@@ -41,6 +43,7 @@ const Education = () => {
             </div>
 
         </div>
+       
     );
 };
 
